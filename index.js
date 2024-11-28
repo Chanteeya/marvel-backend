@@ -97,7 +97,7 @@ app.get("/comics/:characterId", async (req, res) => {
       "https://lereacteur-marvel-api.herokuapp.com/comics/" +
         req.params.characterId +
         "?apiKey=" +
-        process.env.API_KEY
+        process.env.MARVEL_API_KEY
     );
     return res.status(200).json(response.data);
   } catch (error) {
