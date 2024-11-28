@@ -6,8 +6,6 @@ const cors = require("cors");
 
 app.use(cors());
 
-const apiKey = process.env.MARVEL_API_KEY;
-
 app.get("/", (req, res) => {
   try {
     return res.status(200).json("Bienvenue sur mon serveur");
